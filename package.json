@@ -1,0 +1,20 @@
+{
+  "name": "squidlink-translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nboyers/Squidlink-Serverless-Pipeline-AWS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nboyers/Squidlink-Serverless-Pipeline-AWS/issues"
+  },
+  "homepage": "https://github.com/nboyers/Squidlink-Serverless-Pipeline-AWS#readme"
+}
