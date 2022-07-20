@@ -16,8 +16,5 @@ phases:
 artifacts:
   files:
     - code/html/*
-    - code/css/*
-    - code/main/*
     - code/test/*
-    - images/*
     - package.json
