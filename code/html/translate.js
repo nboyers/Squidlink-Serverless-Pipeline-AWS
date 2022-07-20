@@ -1,6 +1,0 @@
-/**
- * 
- */
-function submitFunction() {
-    alert("example");
-  }

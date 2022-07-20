@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"squidlink-translator","dependencies":{"@aws-sdk/client-translate":{"version":"3.131.0"},"aws-sdk":{"version":"2.1179.0"}}}

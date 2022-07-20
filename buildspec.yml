@@ -15,6 +15,7 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - code/html/*
-    - code/test/*
+    - code/SquidLink-Website/* 
+    - test/*
     - package.json
+    - target/npmlist.json

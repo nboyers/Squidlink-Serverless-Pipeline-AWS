@@ -2,15 +2,9 @@
 <html>
 
 <head>
-  <style>
-.center {
-  text-align: center;
-}
-
-</style>
   <title>Squid Link Translate</title>
-  <link rel="stylesheet" href="index.css">
-
+  
+  <link rel="stylesheet" href="index.css" type="text/css" charset="utf-8">
 </head>
 
 <body>
@@ -26,14 +20,12 @@
 
   </h1>
   <div class="center">
-    <textarea name="var_1" rows="5" cols="30" wrap="soft"></textarea>
-</div>
+    <textarea id="translateBox" rows="5" cols="30" wrap="soft"></textarea>
+  </div>
   </form>
 
   <p style="text-align: center;">
-    <script type="text/javascript" src="translate.js">
-    </script>
-    <input type="button" onclick="submitFunction()" value="Translate">
+    <input name="translateButton" value="Execute" type="button" onclick="translateText(document.getElementById('translateBox').value)">
   </p>
 
   <p style="text-align: center;">&nbsp;</p>
