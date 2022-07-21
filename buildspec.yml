@@ -3,15 +3,20 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 16
+      nodejs: latest
   pre_build:
     commands:
-     - echo Installing source NPM dependencies...
-      - npm install -g jest 
+      - npm install 
   build:
     commands:
-      - echo Running Tests
+      - npm build
       - npm test
+  reports:
+    jest_reports:
+      files:
+      - jestTest
+      file-format: JUNITXML
+      base-directory: /jestTest
   post_build:
     commands:
       - echo Tests Complete
