@@ -1,4 +1,5 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
@@ -6,10 +7,10 @@ phases:
     pre_build: null
     commands:
       - npm install
-  build:
-    commands:
-      - npm build
-      - npm test
+    build:
+      commands:
+        - npm build
+        - npm test
   reports:
     jest_reports:
       files:
@@ -20,9 +21,9 @@ phases:
     commands:
       - echo Tests Complete
       - echo Build completed on `date`
-  artifacts: null
-  files:
-    - package.json
-    - src/*
-    - test/*
-    - target/npmlist.json
+  artifacts:
+    files:
+      - package.json
+      - src/*
+      - test/*
+      - target/npmlist.json
