@@ -1,29 +1,29 @@
 version: 0.2
-
+      
 phases:
   install:
+    on-failure: ABORT 
     runtime-versions:
       nodejs: latest
-    pre_build: null
+      runtime: version
+  pre_build:
+    on-failure: ABORT 
     commands:
       - npm install
-    build:
-      commands:
-        - npm build
-        - npm test
-  reports:
-    jest_reports:
-      files:
-        - jestTest
-      file-format: JUNITXML
-      base-directory: /jestTest
+  build:
+    on-failure: ABORT
+    commands:
+      - npm build
+      - npm test
   post_build:
-      commands:
-        - echo Tests Complete
-        - echo Build completed on `date`
-  artifacts:
-    files:
-      - package.json
-      - src/*
-      - test/*
-      - target/npmlist.json
+    on-failure: ABORT 
+    commands:
+      - echo Tests Complete
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - package.json
+    - src/*
+    - test/*
+    - target/npmlist.json
