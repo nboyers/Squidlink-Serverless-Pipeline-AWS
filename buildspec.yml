@@ -2,11 +2,11 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: latest
+  runtime-versions:
+  nodejs: latest
   pre_build:
-    commands:
-      - npm install 
+  commands:
+    - npm install
   build:
     commands:
       - npm build
@@ -14,16 +14,16 @@ phases:
   reports:
     jest_reports:
       files:
-      - jestTest
+        - jestTest
       file-format: JUNITXML
       base-directory: /jestTest
   post_build:
     commands:
       - echo Tests Complete
       - echo Build completed on `date`
-artifacts:
+  artifacts:
   files:
     - package.json
-    - src/* 
+    - src/*
     - test/*
     - target/npmlist.json
