@@ -12,7 +12,6 @@ phases:
   build:
     on-failure: ABORT
     commands:
-      - npm build
       - npm test
   post_build:
     on-failure: ABORT 
