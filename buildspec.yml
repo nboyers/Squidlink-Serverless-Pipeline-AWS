@@ -3,12 +3,11 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 12
+      nodejs: 16
   pre_build:
     commands:
      - echo Installing source NPM dependencies...
       - npm install  
-      - npm install --location=global jest 
   build:
     commands:
       - echo Running Tests
