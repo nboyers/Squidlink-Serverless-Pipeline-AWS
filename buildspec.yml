@@ -6,16 +6,19 @@ phases:
       nodejs: 12
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+     - echo Installing source NPM dependencies...
+      - npm install  
   build:
     commands:
-      - echo Build started on `date`
+      - echo Running Tests
+      - npm test
   post_build:
     commands:
+      - echo Tests Complete
       - echo Build completed on `date`
 artifacts:
   files:
-    - code/SquidLink-Website/* 
-    - test/*
     - package.json
+    - src/* 
+    - test/*
     - target/npmlist.json
