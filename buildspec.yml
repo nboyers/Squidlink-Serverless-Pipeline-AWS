@@ -8,7 +8,7 @@ phases:
     commands:
      - echo Installing source NPM dependencies...
       - npm install  
-      - npm install jest 
+      - npm install --location=global jest 
   build:
     commands:
       - echo Running Tests
