@@ -18,9 +18,9 @@ phases:
       file-format: JUNITXML
       base-directory: /jestTest
   post_build:
-    commands:
-      - echo Tests Complete
-      - echo Build completed on `date`
+      commands:
+        - echo Tests Complete
+        - echo Build completed on `date`
   artifacts:
     files:
       - package.json
