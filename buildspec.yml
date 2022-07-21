@@ -1,12 +1,11 @@
 version: 0.2
-
 phases:
   install:
-  runtime-versions:
-  nodejs: latest
-  pre_build:
-  commands:
-    - npm install
+    runtime-versions:
+      nodejs: latest
+    pre_build: null
+    commands:
+      - npm install
   build:
     commands:
       - npm build
@@ -21,7 +20,7 @@ phases:
     commands:
       - echo Tests Complete
       - echo Build completed on `date`
-  artifacts:
+  artifacts: null
   files:
     - package.json
     - src/*
