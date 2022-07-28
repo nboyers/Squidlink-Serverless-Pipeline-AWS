@@ -10,11 +10,11 @@ phases:
     commands:
       - npm install
   build:
-    on-failure: ABORT
+    on-failure: CONTINUE
     commands:
       - npm test
   post_build:
-    on-failure: CONTINUE
+    on-failure: ABORT
     commands:
       - echo Tests Complete
       - echo Build completed on `date`
