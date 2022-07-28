@@ -14,7 +14,7 @@ phases:
     commands:
       - npm test
   post_build:
-    on-failure: ABORT 
+    on-failure: CONTINUE
     commands:
       - echo Tests Complete
       - echo Build completed on `date`
