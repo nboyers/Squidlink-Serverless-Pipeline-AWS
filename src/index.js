@@ -14,8 +14,6 @@ function fizz_buzz(numbers) {
             result.push(number)
         }
     }
-    
     return result.join(', ')
 }
-
 module.exports = fizz_buzz;
